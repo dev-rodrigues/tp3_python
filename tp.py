@@ -110,7 +110,8 @@ somatorio = 0
 for aluno in alunos:
     somatorio = somatorio + aluno.get_altura
 
-media = somatorio / quantidade_alunos
+if quantidade_alunos > 0:
+    media = somatorio / quantidade_alunos
 
 def get_alunos_acima_da_media(alunos_cadastrados, media):
     alunos_acima_da_media = []
